@@ -1,3 +1,5 @@
+// Create variables to represent the temperature readings for each day of the month
+
 const day1TempF = 32;
 const day2TempC = 25;
 const day3TempF = 70;
@@ -29,6 +31,8 @@ const day28TempC = 17;
 const day29TempF = 76;
 const day30TempC = 29;
 
+//Convert the temperatures to a consistent unit.
+
 const day1TempC = (day1TempF - 32) * 5 / 9;
 const day3TempC = (day3TempF - 32) * 5 / 9;
 const day5TempC = (day5TempF - 32) * 5 / 9;
@@ -45,32 +49,34 @@ const day25TempC = (day25TempF - 32) * 5 / 9;
 const day27TempC = (day27TempF - 32) * 5 / 9;
 const day29TempC = (day29TempF - 32) * 5 / 9;
 
-let temperature_in_celcius = (day1TempC + day2TempC + day3TempC + day4TempC + day5TempC + day6TempC + day7TempC + day8TempC + day9TempC + day10TempC + day11TempC + day12TempC + day13TempC + day14TempC + day15TempC + day16TempC + day17TempC + day18TempC + day19TempC + day20TempC + day21TempC + day22TempC + day23TempC + day24TempC + day25TempC + day26TempC + day27TempC + day28TempC + day29TempC + day30TempC);
-const tot_temperature_in_celcius = temperature_in_celcius +"°C";
-let average_temperature_in_celcius =temperature_in_celcius / 30;
-const avg_temperature_in_celcius = average_temperature_in_celcius +"°C"; 
+const day2TempF = (day2TempC * 9 / 5) + 32;
+const day4TempF = (day4TempC * 9 / 5) + 32;
+const day6TempF = (day6TempC * 9 / 5) + 32;
+const day8TempF = (day8TempC * 9 / 5) + 32;
+const day10TempF = (day10TempC * 9 / 5) + 32;
+const day12TempF = (day12TempC * 9 / 5) + 32;
+const day14TempF = (day14TempC * 9 / 5) + 32;
+const day16TempF = (day16TempC * 9 / 5) + 32;
+const day18TempF = (day18TempC * 9 / 5) + 32;
+const day20TempF = (day20TempC * 9 / 5) + 32;
+const day22TempF = (day22TempC * 9 / 5) + 32;
+const day24TempF = (day24TempC * 9 / 5) + 32;
+const day26TempF = (day26TempC * 9 / 5) + 32;
+const day28TempF = (day28TempC * 9 / 5) + 32;
+const day30TempF = (day30TempC * 9 / 5) + 32;
 
-const day2TempF = (day2TempC * 9/5) + 32;
-const day4TempF = (day4TempC * 9/5) + 32;
-const day6TempF = (day6TempC * 9/5) + 32;
-const day8TempF = (day8TempC * 9/5) + 32;
-const day10TempF = (day10TempC * 9/5) + 32;
-const day12TempF = (day12TempC * 9/5) + 32;
-const day14TempF = (day14TempC * 9/5) + 32;
-const day16TempF = (day16TempC * 9/5) + 32;
-const day18TempF = (day18TempC * 9/5) + 32;
-const day20TempF = (day20TempC * 9/5) + 32;
-const day22TempF = (day22TempC * 9/5) + 32;
-const day24TempF = (day24TempC * 9/5) + 32;
-const day26TempF = (day26TempC * 9/5) + 32;
-const day28TempF = (day28TempC * 9/5) + 32;
-const day30TempF = (day30TempC * 9/5) + 32;
+//sum the temperatures in Celsius and Fahrenheit
+const totalTempC = day1TempC + day2TempC + day3TempC + day4TempC + day5TempC + day6TempC + day7TempC + day8TempC + day9TempC + day10TempC + day11TempC + day12TempC + day13TempC + day14TempC + day15TempC + day16TempC + day17TempC + day18TempC + day19TempC + day20TempC + day21TempC + day22TempC + day23TempC + day24TempC + day25TempC + day26TempC + day27TempC + day28TempC + day29TempC + day30TempC;
+const totalTempF = (day1TempF) + (day2TempF) + (day3TempF) + (day4TempF) + (day5TempF) + (day6TempF) + (day7TempF) + (day8TempF) + (day9TempF) + (day10TempF) + (day11TempF) + (day12TempF) + (day13TempF) + (day14TempF) + (day15TempF) + (day16TempF) + (day17TempF) + (day18TempF) + (day19TempF) + (day20TempF) + (day21TempF) + (day22TempF) + (day23TempF) + (day24TempF) + (day25TempF) + (day26TempF) + (day27TempF) + (day28TempF) + (day29TempF) + (day30TempF);
 
-let temperature_in_farenheit= (day1TempF + day2TempF + day3TempF + day4TempF + day5TempF + day6TempF + day7TempF + day8TempF + day9TempF + day10TempF + day11TempF + day12TempF + day13TempF + day14TempF + day15TempF + day16TempF + day17TempF + day18TempF + day19TempF + day20TempF + day21TempF + day22TempF + day23TempF + day24TempF + day25TempF + day26TempF + day27TempF + day28TempF + day29TempF + day30TempF);
-const tot_temperature_in_farenheit = temperature_in_farenheit / 30 + "°F";
-let average_temperature_in_farenheit = temperature_in_farenheit / 30;
-const avg_temperature_in_farenheit = average_temperature_in_farenheit + "°F";
+const tot_temperature_in_fahrenheit= totalTempF;
+const tot_temperature_in_celsius= totalTempC;
 
+// Calculate the average temperature in Celsius and Fahrenheit
+const averageTempC = totalTempC / 30;
+const averageTempF = tot_temperature_in_fahrenheit / 30;
 
+const avg_temperature_in_fahrenheit= averageTempF;
+const avg_temperature_in_celsius= averageTempC;
 
 
